@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">4.  Course Selection</string>
+        <string-array name="courses">
+            <item>Mobile Application Development</item>
+            <item>Java Full Stack</item>
+            <item>.Net Full Stack</item>
+        </string-array>
+</resources>

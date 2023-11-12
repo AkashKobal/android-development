@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+android:id="@+id/header"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="BMI Calculator"
+android:textSize="48dp"
+android:textStyle="bold"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent"
+app:layout_constraintBottom_toTopOf="@+id/wtLbl" />
+
+<TextView
+android:id="@+id/wtLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Weight (in Kg)"
+android:textStyle="bold"
+tools:layout_editor_absoluteX="53dp"
+tools:layout_editor_absoluteY="178dp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/wtBox"
+app:layout_constraintBottom_toTopOf="@+id/htLbl"
+app:layout_constraintTop_toBottomOf="@+id/header" />
+
+<EditText
+android:id="@+id/wtBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="Enter Weight"
+android:inputType="text"
+android:minHeight="48dp"
+tools:layout_editor_absoluteX="184dp"
+tools:layout_editor_absoluteY="164dp"
+app:layout_constraintBottom_toTopOf="@+id/htBox"
+app:layout_constraintStart_toEndOf="@+id/wtLbl"
+app:layout_constraintTop_toBottomOf="@+id/header"
+app:layout_constraintEnd_toEndOf="parent"/>
+
+<TextView
+android:id="@+id/htLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Height (in Cm)"
+android:textStyle="bold"
+tools:layout_editor_absoluteX="56dp"
+tools:layout_editor_absoluteY="295dp"
+app:layout_constraintTop_toBottomOf="@+id/wtLbl"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/wtBox"
+app:layout_constraintBottom_toTopOf="@+id/calcBtn"/>
+
+<EditText
+android:id="@+id/htBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:minHeight="48dp"
+android:hint="Enter Height"
+android:inputType="text"
+tools:layout_editor_absoluteX="184dp"
+tools:layout_editor_absoluteY="275dp"
+app:layout_constraintBottom_toTopOf="@+id/calcBtn"
+app:layout_constraintStart_toEndOf="@+id/htLbl"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/wtBox"/>
+
+<Button
+android:id="@+id/calcBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Calculate"
+tools:layout_editor_absoluteX="157dp"
+tools:layout_editor_absoluteY="431dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/htBox"
+app:layout_constraintBottom_toTopOf="@+id/result"/>
+
+<TextView
+android:id="@+id/result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+android:textStyle="bold"
+tools:layout_editor_absoluteX="180dp"
+tools:layout_editor_absoluteY="571dp"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/calcBtn"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

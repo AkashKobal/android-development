@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WhatsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="whats_app">Whats App</string>
+    <string name="chats">Chats</string>
+    <string name="updates">Updates</string>
+    <string name="calls">Calls</string>
+    <string name="calls1">Calls</string>
+    <string name="chats1">Chats</string>
+    <string name="updates1">Updates</string>
+</resources>

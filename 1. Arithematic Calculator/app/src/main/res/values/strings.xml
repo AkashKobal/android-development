@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Arithematic Calculator</string>
+    <string name="enter_a_value">Enter a Value</string>
+    <string name="lk">+</string>
+    <string name="jokp">-</string>
+    <string name="jkolj">*</string>
+    <string name="sef">/</string>
+    <string name="hio">Enter b Value</string>
+</resources>

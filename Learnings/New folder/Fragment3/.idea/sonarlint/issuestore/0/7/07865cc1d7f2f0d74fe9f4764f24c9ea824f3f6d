@@ -1,0 +1,11 @@
+
+c
+java:S1659"ADeclare "blue" and all following declarations on a separate line.(âÁÔûÿÿÿÿÿ8±¼î„µ1
+X
+java:S1854#"6Remove this useless assignment to local variable "fr".(„¸†Ëýÿÿÿÿ8¿¼î„µ1
+R
+java:S1854'"6Remove this useless assignment to local variable "fr".(¾€Ó+8¿¼î„µ1
+X
+java:S1854+"6Remove this useless assignment to local variable "fr".(’¯ÏÚüÿÿÿÿ8¿¼î„µ1
+I
+java:S1481"'Remove this unused "fr" local variable.(óà–Êýÿÿÿÿ8ÛŒ¤…µ1

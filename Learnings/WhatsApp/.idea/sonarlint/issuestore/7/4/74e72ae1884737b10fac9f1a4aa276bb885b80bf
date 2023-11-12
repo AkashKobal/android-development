@@ -1,0 +1,16 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(°Ίΰÿύÿÿÿÿ8„χω†µ1
+s
+java:S1450"VRemove the "mParam1" field and declare it as a local variable in the relevant methods.(•Νο‘8¦χω†µ1
+s
+java:S1450"VRemove the "mParam2" field and declare it as a local variable in the relevant methods.(΅€ 8¦χω†µ1
+T
+java:S1135"2Complete the task associated to this TODO comment.(άϋ—ψÿÿÿÿ8°χω†µ1
+T
+java:S1135"2Complete the task associated to this TODO comment.(ποΆφϊÿÿÿÿ8±χω†µ1
+T
+java:S1135'"2Complete the task associated to this TODO comment.(ίνÿÿÿÿÿ8³χω†µ1
+H
+java:S1068"+Remove this unused "mParam1" private field.(•Νο‘8Αχω†µ1
+H
+java:S1068"+Remove this unused "mParam2" private field.(΅€ 8Αχω†µ1

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+<TextView
+android:id="@+id/header"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Registration Form"
+android:textSize="34sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/nameLbl"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.605"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/nameLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Name"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/FNameLbl"
+app:layout_constraintEnd_toStartOf="@+id/NameBox"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/header" />
+
+<AutoCompleteTextView
+android:id="@+id/PlaceBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:hint="Enter Location"
+android:minHeight="48dp"
+app:layout_constraintBottom_toTopOf="@+id/SubmitBtn"
+app:layout_constraintStart_toEndOf="@+id/PlaceLbl"
+app:layout_constraintTop_toBottomOf="@+id/GenderGroup"
+app:layout_constraintEnd_toEndOf="parent"/>
+
+<TextView
+android:id="@+id/PlaceLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Place of Birth"
+android:textStyle="bold"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/GenderGroup"
+app:layout_constraintEnd_toStartOf="@+id/PlaceBox"
+app:layout_constraintBottom_toTopOf="@+id/SubmitBtn"/>
+
+<TextView
+android:id="@+id/GenderLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Gender"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/PlaceLbl"
+app:layout_constraintEnd_toStartOf="@+id/GenderGroup"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/FNameLbl" />
+
+<TextView
+android:id="@+id/FNameLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Father Name"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/GenderLbl"
+app:layout_constraintEnd_toStartOf="@+id/FNameBox"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/nameLbl" />
+
+<RadioGroup
+android:id="@+id/GenderGroup"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintStart_toEndOf="@+id/GenderLbl"
+app:layout_constraintBottom_toTopOf="@+id/PlaceBox"
+app:layout_constraintTop_toBottomOf="@+id/FNameBox"
+app:layout_constraintEnd_toEndOf="parent">
+
+<RadioButton
+    android:id="@+id/MaleBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Male" />
+
+<RadioButton
+    android:id="@+id/FemaleBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Female" />
+
+</RadioGroup>
+
+<EditText
+android:id="@+id/NameBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="Enter Name"
+android:inputType="text"
+android:minHeight="48dp"
+app:layout_constraintBottom_toTopOf="@+id/FNameBox"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toEndOf="@+id/nameLbl"
+app:layout_constraintTop_toBottomOf="@+id/header" />
+
+<EditText
+android:id="@+id/FNameBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:hint="Enter Father Name"
+android:inputType="text"
+android:minHeight="48dp"
+app:layout_constraintBottom_toTopOf="@+id/GenderGroup"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toEndOf="@+id/FNameLbl"
+app:layout_constraintTop_toBottomOf="@+id/NameBox" />
+
+<Button
+android:id="@+id/SubmitBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Submit"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/PlaceBox"
+app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

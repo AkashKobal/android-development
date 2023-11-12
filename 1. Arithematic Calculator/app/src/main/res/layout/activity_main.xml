@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/aBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/enter_a_value"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/bBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/bBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hio"
+        android:inputType="text"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:textColorHint="#8D6E63"
+        app:layout_constraintBottom_toTopOf="@+id/addBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aBox" />
+
+<Button
+android:id="@+id/addBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/lk"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/subBtn"
+app:layout_constraintBottom_toTopOf="@+id/mulBtn"
+app:layout_constraintTop_toBottomOf="@+id/bBox"/>
+
+<Button
+android:id="@+id/subBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/jokp"
+tools:layout_editor_absoluteX="230dp"
+tools:layout_editor_absoluteY="322dp"
+app:layout_constraintBottom_toTopOf="@+id/divBtn"
+app:layout_constraintStart_toEndOf="@+id/addBtn"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/bBox"/>
+
+<Button
+android:id="@+id/mulBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/jkolj"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/addBtn"
+app:layout_constraintEnd_toStartOf="@+id/divBtn"
+app:layout_constraintBottom_toTopOf="@+id/result"/>
+
+<Button
+android:id="@+id/divBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="@string/sef"
+tools:layout_editor_absoluteX="230dp"
+tools:layout_editor_absoluteY="322dp"
+app:layout_constraintBottom_toTopOf="@+id/result"
+app:layout_constraintStart_toEndOf="@+id/mulBtn"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/subBtn" />
+
+<TextView
+android:id="@+id/result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/divBtn" />
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="0dp"
+        android:layout_height="140dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="142dp"
+                android:gravity="center|center_vertical"
+                android:text="@string/whats_app"
+                android:textSize="34sp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="53dp"
+                android:layout_height="61dp"
+                android:layout_gravity="center"
+                android:backgroundTint="#000000"
+                android:popupBackground="@android:drawable/status_bar_item_background"
+                tools:ignore="MissingConstraints" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="580dp"
+            android:background="#FFAB40"
+            android:orientation="horizontal"
+            tools:ignore="TextSizeCheck,VisualLintBounds">
+
+            <Button
+                android:id="@+id/fragmentChats"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFAB40"
+                android:ellipsize="marquee"
+                android:onClick="onCLick"
+                android:text="@string/chats"
+                android:textSize="20sp"
+                app:iconSize="50dp" />
+
+            <Button
+                android:id="@+id/fragmentUpdates"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginEnd="60dp"
+                android:backgroundTint="#FFAB40"
+                android:onClick="onCLick"
+                android:text="@string/updates"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/fragmentCall"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFAB40"
+                android:onClick="onCLick"
+                android:text="@string/calls"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/fragmentLayout"
+        android:name="com.example.whatsapp.calls"
+        android:layout_width="419dp"
+        android:layout_height="590dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="0dp"></androidx.fragment.app.FragmentContainerView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

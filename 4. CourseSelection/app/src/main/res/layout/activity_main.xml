@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+<TextView
+android:id="@+id/header"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Electives Selection"
+android:textSize="34sp"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/nameBox"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/nameLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Student Name"
+android:textStyle="bold"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintEnd_toStartOf="@+id/nameBox"
+app:layout_constraintTop_toBottomOf="@+id/header"
+app:layout_constraintBottom_toTopOf="@+id/rollnoLbl"/>
+
+<EditText
+android:id="@+id/nameBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:minHeight="48dp"
+android:hint="Enter Student Name"
+android:inputType="text"
+app:layout_constraintStart_toEndOf="@+id/nameLbl"
+app:layout_constraintTop_toBottomOf="@+id/header"
+app:layout_constraintBottom_toTopOf="@+id/rollnoBox"
+app:layout_constraintEnd_toEndOf="parent"/>
+
+<TextView
+android:id="@+id/rollnoLbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Roll No"
+android:textStyle="bold"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/nameLbl"
+app:layout_constraintEnd_toStartOf="@+id/rollnoBox"
+app:layout_constraintBottom_toTopOf="@+id/delbl"/>
+
+<EditText
+android:id="@+id/rollnoBox"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:ems="10"
+android:minHeight="48dp"
+android:hint="Enter Student RollNo"
+android:inputType="text"
+app:layout_constraintStart_toEndOf="@+id/rollnoLbl"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintBottom_toTopOf="@+id/delbl"
+app:layout_constraintTop_toBottomOf="@+id/nameBox"/>
+
+<TextView
+android:id="@+id/delbl"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Discipline Elective"
+android:textStyle="bold"
+app:layout_constraintBottom_toTopOf="@+id/electivesBox"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintHorizontal_bias="0.054"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/rollnoLbl" />
+
+<Spinner
+android:id="@+id/electivesBox"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:minHeight="48dp"
+app:layout_constraintBottom_toTopOf="@+id/SubmitBtn"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@id/delbl"/>
+
+<Button
+android:id="@+id/SubmitBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Submit"
+android:onClick="displayDetails"
+app:layout_constraintTop_toBottomOf="@+id/electivesBox"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toTopOf="@+id/result"
+app:layout_constraintEnd_toStartOf="@+id/ResetBtn"/>
+
+<Button
+android:id="@+id/ResetBtn"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Reset"
+android:onClick="resetDetails"
+app:layout_constraintStart_toEndOf="@+id/SubmitBtn"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/electivesBox"
+app:layout_constraintBottom_toTopOf="@+id/result"/>
+
+<TextView
+android:id="@+id/result"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:gravity="center_horizontal"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/SubmitBtn"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+
+R
+java:S1854"<Remove this useless assignment to local variable "textView".(è¯ÆÙ
+V	java:S125"<This block of commented-out lines of code should be removed.(±Ğ›óùÿÿÿÿ
+C
+java:S1481"-Remove this unused "textView" local variable.(è¯ÆÙ
+V	java:S125"<This block of commented-out lines of code should be removed.(·ù©‹üÿÿÿÿ
