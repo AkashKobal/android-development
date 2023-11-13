@@ -1,0 +1,16 @@
+
+n	java:S101"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(½×šÖùÿÿÿÿ8ìÆíèº1
+h
+java:S1659"FDeclare "checkBox2" and all following declarations on a separate line.(¾Ä•®úÿÿÿÿ8øÆíèº1
+\
+java:S1161":Add the "@Override" annotation above this method signature(¨Œşÿÿÿÿ8‡Çíèº1
+Z
+java:S1854"=Remove this useless assignment to local variable "checkbox3".(€×Íê8ŒÇíèº1
+Y
+java:S1854"=Remove this useless assignment to local variable "checkbox2".(´>8ŒÇíèº1
+M
+java:S1172"+Remove this unused method parameter "view".(éµòŸüÿÿÿÿ8Çíèº1
+J
+java:S1481".Remove this unused "checkbox2" local variable.(´>8Çíèº1
+K
+java:S1481".Remove this unused "checkbox3" local variable.(€×Íê8‘Çíèº1
