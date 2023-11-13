@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vote Eligibility"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nameBox"/>
+
+    <TextView
+        android:id="@+id/nameLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Name"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintBottom_toTopOf="@+id/aadharLbl"
+        app:layout_constraintEnd_toStartOf="@+id/nameBox" />
+
+    <EditText
+        android:id="@+id/nameBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:hint="Enter Username"
+        android:inputType="text"
+        app:layout_constraintStart_toEndOf="@+id/nameLbl"
+        app:layout_constraintBottom_toTopOf="@+id/aadharBox"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/aadharLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Aadhar No."
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameLbl"
+        app:layout_constraintBottom_toTopOf="@+id/dobLbl"
+        app:layout_constraintEnd_toStartOf="@+id/aadharBox"/>
+
+    <EditText
+        android:id="@+id/aadharBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:hint="Enter Aadhar Number"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/aadharLbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameBox"
+        app:layout_constraintBottom_toTopOf="@id/dateBox"/>
+
+    <TextView
+        android:id="@+id/dobLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date of Birth"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkBtn"
+        app:layout_constraintTop_toBottomOf="@+id/aadharLbl"
+        app:layout_constraintEnd_toStartOf="@+id/dateBox"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <EditText
+        android:id="@+id/dateBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:minHeight="48dp"
+        android:hint="Select Date"
+        android:inputType="date"
+        app:layout_constraintStart_toEndOf="@+id/dobLbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aadharBox"
+        app:layout_constraintBottom_toTopOf="@+id/checkBtn"/>
+
+    <Button
+        android:id="@+id/checkBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Check"
+        android:onClick="checkEligibility"
+        app:layout_constraintTop_toBottomOf="@+id/aadharBox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
