@@ -10,3 +10,5 @@
 
 <h4>Intermediate </h4>
 6. Cake App<br>
+7. Animation<br>
+8. Broadcast Reciever<br>
