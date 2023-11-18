@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Animation</string>
-    <string name="animation">Animation</string>
-    <string name="translation">Translation</string>
-    <string name="rotate">Rotate</string>
-    <string name="scale">Scale</string>
-    <string name="alpha">Alpha</string>
-</resources>
