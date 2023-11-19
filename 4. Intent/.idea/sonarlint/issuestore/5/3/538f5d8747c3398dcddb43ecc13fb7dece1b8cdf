@@ -1,0 +1,10 @@
+
+Y
+java:S1854"7Remove this useless assignment to local variable "btn".(õ©Óºùÿÿÿÿ8—œ±ï³1
+Y
+java:S1117"7Rename "btn" which hides the field declared at line 11.(õ©Óºùÿÿÿÿ8šœ±ï³1
+J
+java:S1481"(Remove this unused "btn" local variable.(õ©Óºùÿÿÿÿ8žœ±ï³1
+H
+java:S1172"+Remove this unused method parameter "view".(»õ¢„8 œ±ï³1
+]	java:S125"<This block of commented-out lines of code should be removed.(”úú®þÿÿÿÿ8ªœ±ï³1

@@ -1,0 +1,8 @@
+
+i
+java:S1223"LRename this method to prevent any misunderstanding or make it a constructor.(¨¥ø¸8 „Ð“½1
+ž
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(¨¥ø¸8Ö„Ð“½1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¨¥ø¸8Þ„Ð“½1
+]	java:S125"<This block of commented-out lines of code should be removed.(úÓöïúÿÿÿÿ8à„Ð“½1
+X	java:S125E"<This block of commented-out lines of code should be removed.(Ãðõð8æ„Ð“½1
