@@ -1,7 +1,5 @@
-# Android-Development-Projects Using JAVA
+# Android-Development-Using JAVA
 
-
-<h4>Basic </h4>
 1. Arithmetic Calculator<br>
 2. BMI Calculator (Body Mass Index)<br>
 3. ListView, Spinner, AutocompleteTextView<br>
