@@ -1,0 +1,20 @@
+
+J
+java:S16042"(Make this anonymous inner class a lambda(òéœŸøÿÿÿÿ8ÿÚ†Á¿1
+J
+java:S1604;"(Make this anonymous inner class a lambda(‹ü˜öúÿÿÿÿ8€Û†Á¿1
+E
+java:S1604C"(Make this anonymous inner class a lambda(çòÙ†8Û†Á¿1
+f
+java:S1659"DDeclare "btnPlay" and all following declarations on a separate line.(Ğ«»¿ıÿÿÿÿ8ôÛ†Á¿1
+`
+java:S1854"CRemove this useless assignment to local variable "onlineAudioPath".(ÌÍ£8•â Á¿1
+W
+java:S1874":Remove this use of "setAudioStreamType"; it is deprecated.(Û”ê˜8²Ü†Á¿1
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÌÍ£8´Ü†Á¿1
+Q
+java:S1481"4Remove this unused "onlineAudioPath" local variable.(ÌÍ£8 â Á¿1
+J	java:S108.")Either remove or fill this block of code.(ñ“Š±üÿÿÿÿ8·Ü†Á¿1
+]	java:S125N"<This block of commented-out lines of code should be removed.(•êšşÿÿÿÿ8ÆÜ†Á¿1
+]	java:S125Q"<This block of commented-out lines of code should be removed.(©£Éæüÿÿÿÿ8ÆÜ†Á¿1
