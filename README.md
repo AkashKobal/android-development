@@ -14,3 +14,4 @@
 12. Fragment<br>
 13. BroadcastReciever (AirplaneMode)<br>
 14. BroadcastReciever(BatteryLevel)<br>
+15. Media Player<br>
