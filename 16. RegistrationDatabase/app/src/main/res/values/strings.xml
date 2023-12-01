@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Registration Database</string>
+    <string name="delete">Delete</string>
+    <string name="display">Display</string>
+    <string name="enter_id">Enter id</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_roll_no">Enter Roll No.</string>
+    <string name="enter_section">Enter Section</string>
+    <string name="submit">Submit</string>
+    <string name="registration_form">Registration Form</string>
+</resources>
