@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Database</string>
+    <string name="student_database">Student Database</string>
+    <string name="display">Display</string>
+    <string name="enter_id">Enter id</string>
+    <string name="delete">delete</string>
+    <string name="student_id">Student id</string>
+    <string name="add">add</string>
+    <string name="name">Name</string>
+    <string name="student_name">Student Name</string>
+    <string name="delete1">Delete</string>
+    <string name="add2">Add</string>
+    <string name="section">section</string>
+    <string name="enter_section">Enter Section</string>
+</resources>
