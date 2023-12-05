@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Shared Preferance</string>
+    <string name="tickets">TIckets</string>
+    <string name="movie">Movie</string>
+    <string name="shared_preferance">Shared Preferance</string>
+    <string name="enter_no_ticket">Enter no. Ticket</string>
+    <string name="submit">Submit</string>
+</resources>
