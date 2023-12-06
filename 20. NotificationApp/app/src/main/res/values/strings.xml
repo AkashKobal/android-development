@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Notification App</string>
+    <string name="enter_bp">Enter BP</string>
+    <string name="enter_temperature">Enter Temperature</string>
+    <string name="submit">Submit</string>
+    <string name="blood_presure">Blood Presure</string>
+    <string name="textview">TextView</string>
+</resources>

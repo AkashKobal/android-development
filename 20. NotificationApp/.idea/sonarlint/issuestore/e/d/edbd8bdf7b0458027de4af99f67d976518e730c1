@@ -1,0 +1,9 @@
+
+m	java:S117'"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ΘΕ8ή©λ€Δ1
+m	java:S117("QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°›Υ8ί©λ€Δ1
+r	java:S116"QRename this field "bp_int" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ίχ¶κόÿÿÿÿ8γ©λ€Δ1
+t	java:S116"SRename this field "temp_int" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ίχ¶κόÿÿÿÿ8γ©λ€Δ1
+D
+java:S1659""Declare "temp" on a separate line.(ΌΣωÿÿÿÿ8‹ªλ€Δ1
+H
+java:S1659"&Declare "temp_int" on a separate line.(Ίχ¶κόÿÿÿÿ8ªλ€Δ1
