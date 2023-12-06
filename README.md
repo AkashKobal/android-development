@@ -12,7 +12,11 @@
 10. Animation<br>
 11. Lottie Animation (Custom Animation)<br>
 12. Fragment<br>
-13. BroadcastReciever (AirplaneMode)<br>
-14. BroadcastReciever(BatteryLevel)<br>
+13. Broadcast Reciever (AirplaneMode)<br>
+14. Broadcast Reciever(BatteryLevel)<br>
 15. Media Player<br>
 16. Registration Database<br>
+17. Registration Database<br>
+18. Card View<br>
+19. Shared Preferance<br>
+20. Notification App<br>
