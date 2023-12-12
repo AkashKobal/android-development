@@ -1,0 +1,10 @@
+
+d
+java:S1659"GDeclare "imageview2" and all following declarations on a separate line.(ûË˜‹8ÛÅ•Ü¹1
+]	java:S125"<This block of commented-out lines of code should be removed.(¯ŸÂµúÿÿÿÿ8õÅ•Ü¹1
+`
+java:S1854&"CRemove this useless assignment to local variable "fragmentManager".(âÏ²¹8øÅ•Ü¹1
+O
+java:S1481%"-Remove this unused "fragment" local variable.(ŸÇ÷ºùÿÿÿÿ8úÅ•Ü¹1
+Q
+java:S1481&"4Remove this unused "fragmentManager" local variable.(âÏ²¹8üÅ•Ü¹1
