@@ -1,0 +1,9 @@
+
+?
+java:S1659"#Declare "grag2" on a separate line.(ๆ็88ู๘ฦแล1
+o	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ไ…ฌล๙ÿÿÿÿ8ๅ๘ฦแล1
+M
+java:S1172"+Remove this unused method parameter "view".(ไ…ฌล๙ÿÿÿÿ8ๆ๘ฦแล1
+j	java:S100""NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(บา8่๘ฦแล1
+H
+java:S1172""+Remove this unused method parameter "view".(บา8่๘ฦแล1
