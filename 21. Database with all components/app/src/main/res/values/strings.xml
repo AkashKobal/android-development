@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Database with components</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="checkbox1">CheckBox</string>
+    <string name="checkbox3">CheckBox</string>
+    <string name="checkbox4">CheckBox</string>
+    <string name="checkbox5">CheckBox</string>
+    <string name="checkbox6">CheckBox</string>
+    <string name="course_actv7">course (ACTV)</string>
+    <string name="name">Name</string>
+    <string name="phone_no">Phone no</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="radiobutton4">RadioButton</string>
+    <string name="radiobutton3">RadioButton</string>
+    <string name="radiobutton2">RadioButton</string>
+    <string name="radiobutton6">RadioButton</string>
+    <string name="roll_no">Roll No.</string>
+    <string name="section">Section</string>
+    <string name="submit">Submit</string>
+    <string name="heading">Heading</string>
+</resources>
