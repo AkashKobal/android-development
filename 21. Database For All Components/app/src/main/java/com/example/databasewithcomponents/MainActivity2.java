@@ -14,16 +14,16 @@ public class MainActivity2 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         result =findViewById(R.id.result);
+        Intent intent2 = getIntent();
+        String name =  intent2.getStringExtra("name");
+        String phoneNo = intent2.getStringExtra("phoneNo");
+        String rollNo = intent2.getStringExtra("rollNo");
+//        String section = intent2.getStringExtra("section");
+//        String radio = intent2.getStringExtra("radio");
+//        String checkBox = intent2.getStringExtra("checkBox");
+        startActivity(intent2);
+        result.setText(name+phoneNo+rollNo);
+//        result.setText("Name :"+name+"\n"+"Phone :"+phoneNo+"\n"+"Roll No:"+rollNo+"\n"+"Section :"+section+"\n"+"radio :"+radio+"\n"+"checkBox :"+checkBox);
 
-        /*
-        Intent intent = getIntent();
-        String name =  intent.getStringExtra("name");
-        String phoneNo = intent.getStringExtra("phoneNo");
-        String rollNo = intent.getStringExtra("rollNo");
-        String section = intent.getStringExtra("section");
-        String radio = intent.getStringExtra("radio");
-        String checkBox = intent.getStringExtra("checkBox");
-        result.setText("Name :"+name+"\n"+"Phone :"+phoneNo+"\n"+"Roll No:"+rollNo+"\n"+"Section :"+section+"\n"+"radio :"+radio+"\n"+"checkBox :"+checkBox);
-        */
     }
 }

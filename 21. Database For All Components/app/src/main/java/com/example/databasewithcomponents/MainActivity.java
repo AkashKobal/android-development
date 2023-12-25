@@ -25,12 +25,13 @@ public class MainActivity extends AppCompatActivity {
     RadioButton rb1, rb2, rb3, rb4, rb5;
     RadioButton radioButton;
     CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5, checkBox6;
-    Button submit;
+    Button submit, intent;
     ArrayAdapter spinnerAdapter;
     String selectedDataRadioButton ;
     String selectedDataCheckBox = "";
     String[] coursrForSpinner = {"Aasdf","asdfsd","Asdf","EWFe","adfsdfs","sfwef","EFREG","sfwefw","eadwef","EDWREG"};
     String[] courseForACTV = {"CSE","ISE","CST","IST","IIM"};
+    MyDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +58,10 @@ public class MainActivity extends AppCompatActivity {
         checkBox6 = findViewById(R.id.checkBox6);
 
         submit = findViewById(R.id.submit);
+        intent = findViewById(R.id.intent);
+
+
+        db = new MyDatabase(getApplicationContext(),"COMPONENTDATABASE", null,1);
 
 // Spinner
        spinnerAdapter = new ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item,coursrForSpinner);
@@ -112,22 +117,20 @@ public class MainActivity extends AppCompatActivity {
         String phoneNoTxt = phoneNo.getText().toString();
         String rollNoTxt = rollNo.getText().toString();
         String sectionTxt = section.getText().toString();
+        String courseTxt = courseACTV.getText().toString();
         String radioTxt = selectedDataRadioButton;
         String checkBoxData = selectedDataCheckBox;
 
+        db.insertValues(nameTxt, rollNoTxt, phoneNoTxt, sectionTxt,courseTxt, spinnerTxt, radioTxt, checkBoxData);
+        Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show();
+
+
+
+
 //        Toast.makeText(this, spinnerTxt+nameTxt+rollNoTxt+phoneNoTxt+sectionTxt+radioTxt+checkBoxData, Toast.LENGTH_SHORT).show();
-        Toast.makeText(this, "Name :"+nameTxt+"\n"+"Phone :"+phoneNoTxt+"\n"+"Roll No:"+rollNoTxt+"\n"+"Section :"+sectionTxt+"\n"+"radio :"+radioTxt+"\n"+"checkBox :"+checkBoxData,Toast.LENGTH_LONG).show();
+//        Toast.makeText(this, "Name :"+nameTxt+"\n"+"Phone :"+phoneNoTxt+"\n"+"Roll No:"+rollNoTxt+"\n"+"Section :"+sectionTxt+"\n"+"radio :"+radioTxt+"\n"+"checkBox :"+checkBoxData,Toast.LENGTH_LONG).show();
 
 
-        /*
-        Intent intent = new Intent(MainActivity.this, MainActivity2.class);
-        intent.putExtra("name",nameTxt);
-        intent.putExtra("phoneNo",phoneNoTxt);
-        intent.putExtra("rollNo",radioTxt);
-        intent.putExtra("section",sectionTxt);
-        intent.putExtra("radio",radioTxt);
-        intent.putExtra("checkBox",checkBoxData);
-        startActivity(intent);*/
 
     }
 }
