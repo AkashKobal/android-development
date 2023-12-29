@@ -2,22 +2,21 @@ package com.example.databasewithcomponents;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CheckBox;
-import android.widget.Checkable;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
+    TextView resultDisplay;
     EditText name, rollNo, phoneNo, section;
     AutoCompleteTextView courseACTV;
     Spinner spinner;
@@ -58,7 +57,8 @@ public class MainActivity extends AppCompatActivity {
         checkBox6 = findViewById(R.id.checkBox6);
 
         submit = findViewById(R.id.submit);
-        intent = findViewById(R.id.intent);
+        intent = findViewById(R.id.delete);
+        resultDisplay = findViewById(R.id.resultDisplay);
 
 
         db = new MyDatabase(getApplicationContext(),"COMPONENTDATABASE", null,1);
@@ -79,36 +79,36 @@ public class MainActivity extends AppCompatActivity {
 
         //RadioButton
         int selectedRadioButton = radioGroup.getCheckedRadioButtonId();
-        if (selectedRadioButton == R.id.rb1 ){
+        if (selectedRadioButton == R.id.rb1) {
             selectedDataRadioButton = rb1.getText().toString();
         } else if (selectedRadioButton == R.id.rb2) {
             selectedDataRadioButton = rb2.getText().toString();
-        }else if (selectedRadioButton == R.id.rb3) {
+        } else if (selectedRadioButton == R.id.rb3) {
             selectedDataRadioButton = rb3.getText().toString();
-        }else if (selectedRadioButton == R.id.rb4) {
+        } else if (selectedRadioButton == R.id.rb4) {
             selectedDataRadioButton = rb4.getText().toString();
-        }else if (selectedRadioButton == R.id.rb5) {
+        } else if (selectedRadioButton == R.id.rb5) {
             selectedDataRadioButton = rb5.getText().toString();
         }
 
 
 // checkBox
-        if (checkBox1.isChecked()){
+        if (checkBox1.isChecked()) {
             selectedDataCheckBox += checkBox1.getText().toString();
         }
-        if (checkBox2.isChecked()){
+        if (checkBox2.isChecked()) {
             selectedDataCheckBox += checkBox2.getText().toString();
         }
-        if (checkBox3.isChecked()){
+        if (checkBox3.isChecked()) {
             selectedDataCheckBox += checkBox3.getText().toString();
         }
-        if (checkBox4.isChecked()){
+        if (checkBox4.isChecked()) {
             selectedDataCheckBox += checkBox4.getText().toString();
         }
-        if (checkBox5.isChecked()){
+        if (checkBox5.isChecked()) {
             selectedDataCheckBox += checkBox5.getText().toString();
         }
-        if (checkBox6.isChecked()){
+        if (checkBox6.isChecked()) {
             selectedDataCheckBox += checkBox6.getText().toString();
         }
 
@@ -121,16 +121,28 @@ public class MainActivity extends AppCompatActivity {
         String radioTxt = selectedDataRadioButton;
         String checkBoxData = selectedDataCheckBox;
 
-        db.insertValues(nameTxt, rollNoTxt, phoneNoTxt, sectionTxt,courseTxt, spinnerTxt, radioTxt, checkBoxData);
+        db.insertValues(nameTxt, rollNoTxt, phoneNoTxt, sectionTxt, courseTxt, spinnerTxt, radioTxt, checkBoxData);
         Toast.makeText(this, "Added", Toast.LENGTH_SHORT).show();
-
-
 
 
 //        Toast.makeText(this, spinnerTxt+nameTxt+rollNoTxt+phoneNoTxt+sectionTxt+radioTxt+checkBoxData, Toast.LENGTH_SHORT).show();
 //        Toast.makeText(this, "Name :"+nameTxt+"\n"+"Phone :"+phoneNoTxt+"\n"+"Roll No:"+rollNoTxt+"\n"+"Section :"+sectionTxt+"\n"+"radio :"+radioTxt+"\n"+"checkBox :"+checkBoxData,Toast.LENGTH_LONG).show();
 
 
+    }
 
+    public void delete(View view){
+
+            String nameTxt = name.getText().toString();
+
+            db.deleteValues(nameTxt);
+            Toast.makeText(this, "Data deleted", Toast.LENGTH_SHORT).show();
+
+
+    }
+
+    public void display(View view) {
+        String tabledata = db.displayData();
+        resultDisplay.setText(tabledata);
     }
 }

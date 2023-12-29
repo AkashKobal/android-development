@@ -18,4 +18,17 @@
     <string name="section">Section</string>
     <string name="submit">Submit</string>
     <string name="heading">Heading</string>
+    <string name="sdc">checkBox6</string>
+    <string name="as">checkBox4</string>
+    <string name="course">Course</string>
+    <string name="checkbox22">checkBox2</string>
+    <string name="checkbox35">checkBox3</string>
+    <string name="checkbox55">checkBox5</string>
+    <string name="delete5">Delete</string>
+    <string name="display4">Display</string>
+    <string name="rb11">rb1</string>
+    <string name="rb27">rb2</string>
+    <string name="rb34">rb3</string>
+    <string name="rb46">rb4</string>
+    <string name="rb59">rb5</string>
 </resources>
