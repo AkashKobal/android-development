@@ -1,0 +1,36 @@
+
+Q
+java:S3740A"/Provide the parametrized type for this generic.(¥§§›øÿÿÿÿ8”Ì”Ğ1
+Q
+java:S3740A"/Provide the parametrized type for this generic.(¥§§›øÿÿÿÿ8•Ì”Ğ1
+Q
+java:S3740F"/Provide the parametrized type for this generic.(½×Ÿıÿÿÿÿ8•Ì”Ğ1
+Q
+java:S3740F"/Provide the parametrized type for this generic.(½×Ÿıÿÿÿÿ8•Ì”Ğ1
+E
+java:S1604Q"(Make this anonymous inner class a lambda(­Şï¬8•Ì”Ğ1
+E
+java:S1604c"(Make this anonymous inner class a lambda(©öÖÇ8•Ì”Ğ1
+`
+java:S1659"DDeclare "phoneNo" and all following declarations on a separate line.(ÙîÜ18½Ì”Ğ1
+k
+java:S1659"IDeclare "radioButton2" and all following declarations on a separate line.(‰ğÄ©øÿÿÿÿ8½Ì”Ğ1
+h
+java:S1659"FDeclare "checkBox2" and all following declarations on a separate line.(³äƒæüÿÿÿÿ8½Ì”Ğ1
+H
+java:S1172K"+Remove this unused method parameter "view".(ù·À°8ÆÌ”Ğ1
+M
+java:S1172^"+Remove this unused method parameter "view".(ş©Æ¨ûÿÿÿÿ8ÉÌ”Ğ1
+[
+java:S1854¤"=Remove this useless assignment to local variable "checkBox1".(ôîµ»8µ´Ù˜Ğ1
+M
+java:S1172o"+Remove this unused method parameter "view".(éšÀ¹ùÿÿÿÿ8ÌÌ”Ğ1
+X	java:S125|"<This block of commented-out lines of code should be removed.(ì¦¡İ8æÖ˜Ğ1
+c
+java:S1117š"@Rename "radioButton2" which hides the field declared at line 28.(»éøàüÿÿÿÿ8ÍÌ”Ğ1
+[
+java:S1117›"=Rename "checkBox2" which hides the field declared at line 29.(Ë‰Û8ÍÌ”Ğ1
+[
+java:S1117¤"=Rename "checkBox1" which hides the field declared at line 29.(ôîµ»8Â´Ù˜Ğ1
+L
+java:S1481¤".Remove this unused "checkBox1" local variable.(ôîµ»8Â´Ù˜Ğ1

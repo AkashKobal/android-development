@@ -29,6 +29,9 @@ public class MainActivity2 extends AppCompatActivity {
     CheckBox checkBox1, checkBox2, checkBox3, checkBox4, checkBox5;
     Button next;
 
+    String selectedDataRadioButton ;
+    String selectedDataCheckBox = "";
+
     String[] actvData = {"ACTV1", "ACTV2", "ACTV3", "ACTV4", "ACTV5", "ACTV6"};
     String[] spinnerData = {"Spinner1", "Spinner2", "Spinner3", "Spinner4", "Spinner5", "Spinner6"};
 
@@ -106,6 +109,41 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     public void submit(View view) {
+
+
+        //RadioButton
+        int selectedRadioButton = rg.getCheckedRadioButtonId();
+        if (selectedRadioButton == R.id.radioButton1) {
+            selectedDataRadioButton = radioButton1.getText().toString();
+        } else if (selectedRadioButton == R.id.radioButton2) {
+            selectedDataRadioButton = radioButton2.getText().toString();
+        } else if (selectedRadioButton == R.id.radioButton3) {
+            selectedDataRadioButton = radioButton3.getText().toString();
+        } else if (selectedRadioButton == R.id.radioButton4) {
+            selectedDataRadioButton = radioButton4.getText().toString();
+        }/* else if (selectedRadioButton == R.id.rb5) {
+            selectedDataRadioButton = rb5.getText().toString();
+        }*/
+
+
+// checkBox
+        if (checkBox1.isChecked()) {
+            selectedDataCheckBox += checkBox1.getText().toString();
+        }
+        if (checkBox2.isChecked()) {
+            selectedDataCheckBox += checkBox2.getText().toString();
+        }
+        if (checkBox3.isChecked()) {
+            selectedDataCheckBox += checkBox3.getText().toString();
+        }
+        if (checkBox4.isChecked()) {
+            selectedDataCheckBox += checkBox4.getText().toString();
+        }
+        if (checkBox5.isChecked()) {
+            selectedDataCheckBox += checkBox5.getText().toString();
+        }
+
+
         Intent intent2 = getIntent();
         String name2 = intent2.getStringExtra("Name");
         String phoneNo2 = intent2.getStringExtra("PhoneNo");
@@ -123,7 +161,9 @@ public class MainActivity2 extends AppCompatActivity {
         String time3 = time.getText().toString();
         String actv3 = actv.getText().toString();
         String spinner3 = spinner.getSelectedItem().toString();
+        String checkBox1 = selectedDataCheckBox;
 
+        //from MainActivity
         intent3.putExtra("name2", name2);
         intent3.putExtra("phoneNo2", phoneNo2);
         intent3.putExtra("Date2",date2);
@@ -134,13 +174,15 @@ public class MainActivity2 extends AppCompatActivity {
         intent3.putExtra("checkBox2",checkBox2);
 
 
-
+        // from Mainactivity2
         intent3.putExtra("name3", name3);
         intent3.putExtra("phoneNo3", phoneNo3);
         intent3.putExtra("date3", date3);
         intent3.putExtra("time3", time3);
         intent3.putExtra("actv3", actv3);
         intent3.putExtra("spinner3",spinner3);
+        intent3.putExtra("radiobutton3",selectedDataRadioButton);
+        intent3.putExtra("checkBox3",selectedDataCheckBox);
         startActivity(intent3);
 
 

@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
         String time1 = time.getText().toString();
         String actv1 = actv.getText().toString();
         String spinner1 = spinner.getSelectedItem().toString();
-        int radioButton1 = selectedRadioButton;
         String checkBox1 = selectedDataCheckBox;
 
 
@@ -127,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra("Time",time1);
         intent.putExtra("actv",actv1);
         intent.putExtra("spinner",spinner1);
-        intent.putExtra("radiobutton",radioButton1);
+        intent.putExtra("radiobutton",selectedDataRadioButton);
         intent.putExtra("checkBox",selectedDataCheckBox);
 
         startActivity(intent);

@@ -1,0 +1,8 @@
+
+S
+java:S1659
+"6Declare "resultFromSecondActivity" on a separate line.(ùÊ¦¨8òäé˜Ğ1
+[
+java:S1854#"9Remove this useless assignment to local variable "actv2".(¡È¯Öúÿÿÿÿ8ùäé˜Ğ1
+L
+java:S1481#"*Remove this unused "actv2" local variable.(¡È¯Öúÿÿÿÿ8€åé˜Ğ1
