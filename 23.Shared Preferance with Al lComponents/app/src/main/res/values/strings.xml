@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Shared Preferance with All Components</string>
+    <string name="actv">actv</string>
+    <string name="checkbox1">checkbox1</string>
+    <string name="checkbox2">checkbox2</string>
+    <string name="checkbox4">checkbox4</string>
+    <string name="checkbox5">checkbox5</string>
+    <string name="checkbox3">checkbox3</string>
+    <string name="date">date</string>
+    <string name="name">name</string>
+    <string name="phone_no">phone_no</string>
+    <string name="radiobutton1">radiobutton1</string>
+    <string name="radiobutton2">radiobutton2</string>
+    <string name="radiobutton3">radiobutton3</string>
+    <string name="next">next</string>
+    <string name="radiobutton4">radiobutton4</string>
+    <string name="shared_preferance">Shared Preferance</string>
+    <string name="time">time</string>
+    <string name="submit">Submit</string>
+    <string name="tickets">tickets</string>
+    <string name="movie">movie</string>
+    <string name="enter_no_ticket">enter_no_ticket</string>
+    <string name="actv1">ACTV</string>
+    <string name="name2">Name</string>
+    <string name="phone_no4">Phone No</string>
+</resources>
