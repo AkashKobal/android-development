@@ -1,8 +1,0 @@
-<resources>
-    <string name="app_name">Two Intents</string>
-    <string name="phone_no">Phone No</string>
-    <string name="name">Name</string>
-    <string name="next">Next</string>
-    <string name="two_intents">Two Intents</string>
-    <string name="result">result</string>
-</resources>

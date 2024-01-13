@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Two Intents</string>
+    <string name="phone_no">Phone No</string>
+    <string name="name">Name</string>
+    <string name="next">Next</string>
+    <string name="two_intents">Two Intents</string>
+    <string name="result">result</string>
+    <string name="time">Time</string>
+    <string name="checkbox">CheckBox</string>
+    <string name="checkbox2">CheckBox2</string>
+    <string name="checkbox3">CheckBox3</string>
+    <string name="checkbox4">CheckBox4</string>
+    <string name="checkbox5">CheckBox5</string>
+    <string name="actv">ACTV</string>
+    <string name="date">Date</string>
+    <string name="radiobutton1">RadioButton1</string>
+    <string name="radiobutton2">RadioButton2</string>
+    <string name="radiobutton3">RadioButton3</string>
+    <string name="radiobutton4">RadioButton4</string>
+    <string name="radiobutton5">RadioButton5</string>
+    <string name="checkbox1">Checkbox1</string>
+    <string name="submit">Submit</string>
+    <string name="submit1">Submit</string>
+</resources>

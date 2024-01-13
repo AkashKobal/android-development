@@ -1,0 +1,16 @@
+
+S
+java:S1659
+"6Declare "resultFromSecondActivity" on a separate line.(ùÊ¦¨8àþ‘”Ð1
+[
+java:S1854#"9Remove this useless assignment to local variable "actv2".(¡È¯Öúÿÿÿÿ8åþ‘”Ð1
+[
+java:S1854""9Remove this useless assignment to local variable "time2".(ÜŒíÍøÿÿÿÿ8åþ‘”Ð1
+[
+java:S1854!"9Remove this useless assignment to local variable "date2".(Ö°ßºøÿÿÿÿ8åþ‘”Ð1
+L
+java:S1481!"*Remove this unused "date2" local variable.(Ö°ßºøÿÿÿÿ8éþ‘”Ð1
+L
+java:S1481""*Remove this unused "time2" local variable.(ÜŒíÍøÿÿÿÿ8éþ‘”Ð1
+L
+java:S1481#"*Remove this unused "actv2" local variable.(¡È¯Öúÿÿÿÿ8éþ‘”Ð1

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="TextSizeCheck">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:onClick="next"
+                android:text="@string/two_intents"
+                android:textAlignment="center"
+                android:textSize="34sp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/name"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A" />
+
+            <EditText
+                android:id="@+id/phoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/phone_no"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:textColorHint="#546E7A"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/date"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:onClick="date"
+                tools:ignore="TextFields" />
+
+            <EditText
+                android:id="@+id/time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:hint="@string/time"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:onClick="time" />
+
+            <AutoCompleteTextView
+                android:id="@+id/actv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/actv"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp" />
+
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioButton1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton1"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <RadioButton
+                    android:id="@+id/radioButton2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton2"
+                    tools:ignore="DuplicateIds,VisualLintButtonSize" />
+
+                <RadioButton
+                    android:id="@+id/radioButton3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton3"
+                    tools:ignore="VisualLintButtonSize" />
+
+                <RadioButton
+                    android:id="@+id/radioButton4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radiobutton4"
+                    tools:ignore="VisualLintButtonSize" />
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/checkBox1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox1"
+                tools:ignore="VisualLintButtonSize" />
+
+            <CheckBox
+                android:id="@+id/checkBox2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox2"
+                tools:ignore="VisualLintButtonSize" />
+
+            <CheckBox
+                android:id="@+id/checkBox3"
+                android:layout_width="match_parent"
+                android:layout_height="62dp"
+                android:minHeight="48dp"
+                android:text="@string/checkbox3"
+                tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck,VisualLintBounds" />
+
+            <CheckBox
+                android:id="@+id/checkBox4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox4"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <CheckBox
+                android:id="@+id/checkBox5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/checkbox5"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="next"
+                android:text="@string/next"
+                tools:ignore="VisualLintButtonSize,VisualLintBounds" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
