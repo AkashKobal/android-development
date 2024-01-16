@@ -30,9 +30,12 @@ public class MainActivity extends AppCompatActivity {
         fname = findViewById(R.id.FNameBox);
         places = findViewById(R.id.PlaceBox);
         btn = findViewById(R.id.SubmitBtn);
+
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.select_dialog_item, Locations);
         places.setThreshold(1);
         places.setAdapter(adapter);
+
+        
         rg = findViewById(R.id.GenderGroup);
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override

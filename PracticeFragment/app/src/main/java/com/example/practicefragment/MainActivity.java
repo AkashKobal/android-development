@@ -34,5 +34,8 @@ public class MainActivity extends AppCompatActivity {
     public void Fragment_2(View view) {
         replaceframent(new Fragment2());
     }
+    public void Fragment_3(View view) {
+        replaceframent(new Fragment3());
+    }
 
 }
